@@ -12,7 +12,7 @@ function getWindows(windows) {
     }
 
     if (gmTabs.length) {
-        chrome.tabs.executeScript(gmTabs[0].id, { file: "action-play.js" }, playPause);
+        chrome.tabs.executeScript(gmTabs[0].id, { file: "action-play.js" });
     } else {
         chrome.tabs.create({ url: "https://tunein.com/radio/home/" });
     }
